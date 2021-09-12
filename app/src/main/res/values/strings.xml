@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Hello Git</string>
+    <string name="main_textview">Kelompok Banteng Merah</string>
+    <string name="sub_textview">Anggota</string>
 </resources>
