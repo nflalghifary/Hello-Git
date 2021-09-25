@@ -4,4 +4,5 @@
     <string name="sub_textview">Anggota</string>
     <string name="subtext_splash">DIDUKUNG OLEH SATGAS COVID-19</string>
     <string name="homepage_header_text">Update Harian Satgas Indonesia</string>
+    <string name="splash_screen_description">Splash Screen</string>
 </resources>
