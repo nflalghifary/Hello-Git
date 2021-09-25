@@ -10,8 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloGit">
         <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="Home"/>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="COVID19 Indonesia">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

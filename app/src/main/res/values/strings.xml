@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Hello Git</string>
+    <string name="app_name">Statistik COVID-19 Indonesia</string>
     <string name="main_textview">Kelompok Banteng Merah</string>
     <string name="sub_textview">Anggota</string>
+    <string name="subtext_splash">DIDUKUNG OLEH SATGAS COVID-19</string>
+    <string name="homepage_header_text">Update Harian Satgas Indonesia</string>
 </resources>
