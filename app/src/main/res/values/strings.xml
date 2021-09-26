@@ -5,4 +5,7 @@
     <string name="subtext_splash">DIDUKUNG OLEH SATGAS COVID-19</string>
     <string name="homepage_header_text">Update Harian Satgas Indonesia</string>
     <string name="splash_screen_description">Splash Screen</string>
+    <string name="homepage_text_kasusbaru">Kasus Baru</string>
+    <string name="homepage_text_kasusaktif">Kasus Aktif</string>
+    <string name="homepage_text_meninggal">Meninggal</string>
 </resources>

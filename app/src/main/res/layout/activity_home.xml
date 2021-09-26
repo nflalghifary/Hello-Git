@@ -46,4 +46,138 @@
         android:textColor="@color/BiruMuda"
         app:layout_constraintStart_toEndOf="@+id/homepage_logo"
         app:layout_constraintTop_toBottomOf="@+id/homepage_header" />
+
+    <LinearLayout
+        android:id="@+id/homepage_kasus_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homepage_logo"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/homepage_text_kasusbaru"
+            android:layout_width="@dimen/homepage_kasus_textplaceholder"
+            android:layout_height="wrap_content"
+            android:text="@string/homepage_text_kasusbaru"
+            style="@style/HeadJumlahKasus"/>
+        <TextView
+            android:id="@+id/homepage_text_kasusaktif"
+            android:layout_width="@dimen/homepage_kasus_textplaceholder"
+            android:layout_height="wrap_content"
+            android:text="@string/homepage_text_kasusaktif"
+            style="@style/HeadJumlahKasus"/>
+        <TextView
+            android:id="@+id/homepage_text_meninggal"
+            android:layout_width="@dimen/homepage_kasus_textplaceholder"
+            android:layout_height="wrap_content"
+            android:text="@string/homepage_text_meninggal"
+            style="@style/HeadJumlahKasus"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/homepage_kasus_isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homepage_kasus_header"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/homepage_isi_kasusbaru"
+            android:layout_width="@dimen/homepage_kasus_textplaceholder"
+            android:layout_height="wrap_content"
+            android:text="1.600"
+            style="@style/IsiJumlahKasus"/>
+        <TextView
+            android:id="@+id/homepage_isi_kasusaktif"
+            android:layout_width="@dimen/homepage_kasus_textplaceholder"
+            android:layout_height="wrap_content"
+            android:text="2.800.000"
+            style="@style/IsiJumlahKasus"/>
+        <TextView
+            android:id="@+id/homepage_isi_meninggal"
+            android:layout_width="@dimen/homepage_kasus_textplaceholder"
+            android:layout_height="wrap_content"
+            android:text="1.600.000"
+            style="@style/IsiJumlahKasus"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/total_kasus_view"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homepage_kasus_isi">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:cardCornerRadius="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/Biru">
+
+                    <TextView
+                        android:id="@+id/Total_Kasus_CardPlaceholder"
+                        style="@style/HeadCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:text="TOTAL KASUS DI INDONESIA"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Total_Kasus_NumberPlaceholder"
+                        style="@style/TextCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="4.198.678"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Total_Kasus_CardPlaceholder" />
+
+                    <ImageView
+                        android:id="@+id/imageCard"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="-32dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/logo_layer1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
