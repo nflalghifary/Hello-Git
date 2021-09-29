@@ -61,16 +61,16 @@
         android:gravity="center_horizontal">
 
         <TextView
-            android:id="@+id/homepage_text_kasusbaru"
+            android:id="@+id/homepage_text_dirawat"
             android:layout_width="@dimen/homepage_kasus_textplaceholder"
             android:layout_height="wrap_content"
-            android:text="@string/homepage_text_kasusbaru"
+            android:text="@string/homepage_text_dirawat"
             style="@style/HeadJumlahKasus"/>
         <TextView
-            android:id="@+id/homepage_text_kasusaktif"
+            android:id="@+id/homepage_text_sembuh"
             android:layout_width="@dimen/homepage_kasus_textplaceholder"
             android:layout_height="wrap_content"
-            android:text="@string/homepage_text_kasusaktif"
+            android:text="@string/homepage_text_sembuh"
             style="@style/HeadJumlahKasus"/>
         <TextView
             android:id="@+id/homepage_text_meninggal"
@@ -92,13 +92,13 @@
         android:gravity="center_horizontal">
 
         <TextView
-            android:id="@+id/homepage_isi_kasusbaru"
+            android:id="@+id/homepage_isi_rawat"
             android:layout_width="@dimen/homepage_kasus_textplaceholder"
             android:layout_height="wrap_content"
             android:text="1.600"
             style="@style/IsiJumlahKasus"/>
         <TextView
-            android:id="@+id/homepage_isi_kasusaktif"
+            android:id="@+id/homepage_isi_negatif"
             android:layout_width="@dimen/homepage_kasus_textplaceholder"
             android:layout_height="wrap_content"
             android:text="2.800.000"
@@ -143,7 +143,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="24dp"
-                        android:text="TOTAL KASUS DI INDONESIA"
+                        android:text="TOTAL POSITIF DI INDONESIA"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -153,7 +153,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        android:text="4.198.678"
+                        android:text="angka"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/Total_Kasus_CardPlaceholder" />
 
