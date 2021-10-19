@@ -5,8 +5,9 @@
     <string name="subtext_splash">DIDUKUNG OLEH SATGAS COVID-19</string>
     <string name="homepage_header_text">Update Harian Satgas Indonesia</string>
     <string name="splash_screen_description">Splash Screen</string>
-    <string name="homepage_text_dirawat">Dirawat</string>
-    <string name="homepage_text_sembuh">Sembuh</string>
-    <string name="homepage_text_meninggal">Meninggal</string>
+    <string name="homepage_text_dirawat">TOTAL KASUS DIRAWAT</string>
+    <string name="homepage_text_sembuh">TOTAL KASUS SEMBUH</string>
+    <string name="homepage_text_meninggal">TOTAL KASUS MENINGGAL</string>
     <string name="value_total_kasus">4.198.678</string>
+    <string name="placeholder_card">placeholder</string>
 </resources>
