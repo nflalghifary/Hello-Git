@@ -10,4 +10,6 @@
     <string name="homepage_text_meninggal">TOTAL KASUS MENINGGAL</string>
     <string name="value_total_kasus">4.198.678</string>
     <string name="placeholder_card">placeholder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

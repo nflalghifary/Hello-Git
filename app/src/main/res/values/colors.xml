@@ -12,4 +12,6 @@
     <color name="Hijau">#179942</color>
     <color name="BiruGelap">#1e2e3f</color>
     <color name="Abu">#949494</color>
+    <color name="AbuTerang">#D2D2D2</color>
+    <color name="transparent">#00FF</color>
 </resources>
