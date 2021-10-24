@@ -1,11 +1,25 @@
 package com.example.hellogit;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,10 +37,12 @@ public class HomeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    /*String positif = "";
+    String positif = "";
     String sembuh = "";
     String meninggal = "";
-    String rawat = "";*/
+    String rawat = "";
+    Context thiscontext;
+    private Context mContext;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -51,7 +67,14 @@ public class HomeFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mContext=context;
+    }
+
+
+    @Override
+    public void onViewCreated(View v, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
@@ -59,12 +82,12 @@ public class HomeFragment extends Fragment {
         }
         String URL = "https://api.kawalcorona.com/indonesia/";
 
-        /*
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        TextView Total_positif = (TextView)findViewById(R.id.Total_Kasus_NumberPlaceholder);
-        TextView Total_sembuh = (TextView)findViewById(R.id.homepage_isi_negatif);
-        TextView Total_meninggal = (TextView)findViewById(R.id.homepage_isi_meninggal);
-        TextView Total_rawat = (TextView)findViewById(R.id.homepage_isi_rawat);
+
+        TextView Total_positif = (TextView) v.findViewById(R.id.Total_Kasus_NumberPlaceholder);
+        TextView Total_sembuh = (TextView) v.findViewById(R.id.homepage_isi_negatif);
+        TextView Total_meninggal = (TextView) v.findViewById(R.id.homepage_isi_meninggal);
+        TextView Total_rawat = (TextView) v.findViewById(R.id.homepage_isi_rawat);
+        RequestQueue requestQueue = Volley.newRequestQueue(mContext);
 
 
         StringRequest objectRequest = new StringRequest (
@@ -105,7 +128,7 @@ public class HomeFragment extends Fragment {
                 }
         );
 
-        requestQueue.add(objectRequest);*/
+        requestQueue.add(objectRequest);
     }
 
     @Override

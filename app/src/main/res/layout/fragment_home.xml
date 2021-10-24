@@ -7,6 +7,7 @@
     tools:context=".HomeFragment">
 
     <TextView
+        android:layout_marginTop="30dp"
         android:id="@+id/Text_DataIndonesia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,7 +35,7 @@
         android:id="@+id/total_kasus_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="92dp"
         android:fadingEdgeLength="2dp"
         android:fillViewport="true"
         android:requiresFadingEdge="vertical"
@@ -48,13 +49,70 @@
             android:layout_gravity="center_horizontal">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
+                android:id="@+id/cardView4"
                 android:layout_width="350dp"
                 android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
                 app:cardCornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/Biru">
+
+                    <TextView
+                        android:id="@+id/Total_Kasus_CardPlaceholder"
+                        style="@style/HeadCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:text="TOTAL POSITIF DI INDONESIA"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Total_Kasus_NumberPlaceholder"
+                        style="@style/TextCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/placeholder_card"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/Total_Kasus_CardPlaceholder" />
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="-32dp"
+                        android:adjustViewBounds="true"
+                        android:alpha="0.5"
+                        android:scaleType="centerInside"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/logo_layer1"
+                        app:tint="@color/Abu" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView4"
+                >
+
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -210,73 +268,22 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView4"
-                android:layout_width="350dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="20dp"
-                android:visibility="visible"
-                app:cardCornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/cardView3">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/Biru">
-
-                    <TextView
-                        android:id="@+id/Total_Kasus_CardPlaceholder"
-                        style="@style/HeadCard"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="24dp"
-                        android:text="TOTAL POSITIF DI INDONESIA"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/Total_Kasus_NumberPlaceholder"
-                        style="@style/TextCard"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:text="@string/placeholder_card"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/Total_Kasus_CardPlaceholder" />
-
-                    <ImageView
-                        android:layout_width="175dp"
-                        android:layout_height="175dp"
-                        android:layout_marginTop="32dp"
-                        android:layout_marginEnd="-32dp"
-                        android:adjustViewBounds="true"
-                        android:alpha="0.5"
-                        android:scaleType="centerInside"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/logo_layer1"
-                        app:tint="@color/Abu" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
 
 
             <TextView
                 android:id="@+id/text_SATGAS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="82dp"
                 android:layout_marginBottom="140dp"
                 android:gravity="center_horizontal"
-                android:text="DATA DIDUKUNG SATGAS COVID-19"
+                android:text="© DATA DIDUKUNG SATGAS COVID-19"
                 android:textColor="@color/Hijau"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/cardView4" />
+                app:layout_constraintTop_toBottomOf="@id/cardView3" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
