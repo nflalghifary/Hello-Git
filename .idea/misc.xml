@@ -14,11 +14,17 @@
         <entry key="..\:/Android/AndroidStudioProjects/HelloGit/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android/AndroidStudioProjects/HelloGit/app/src/main/res/layout/activity_splash_screen.xml" value="0.15" />
         <entry key="..\:/Android/AndroidStudioProjects/HelloGit/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3287037037037037" />
+        <entry key="..\:/Workspace/Android Workspace/Hello-Git/app/src/main/res/drawable/ic_navbar_home.xml" value="0.19583333333333333" />
         <entry key="..\:/Workspace/Android Workspace/Hello-Git/app/src/main/res/layout/activity_home.xml" value="0.16666666666666666" />
+        <entry key="..\:/Workspace/Android Workspace/Hello-Git/app/src/main/res/layout/activity_info.xml" value="0.165625" />
         <entry key="..\:/Workspace/Android Workspace/Hello-Git/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Workspace/Android Workspace/Hello-Git/app/src/main/res/layout/activity_provinsi.xml" value="0.3333333333333333" />
         <entry key="..\:/Workspace/Android Workspace/Hello-Git/app/src/main/res/layout/fragment_c_o_v_i_d.xml" value="0.1640625" />
         <entry key="..\:/Workspace/Android Workspace/Hello-Git/app/src/main/res/layout/fragment_f_a_q.xml" value="0.3333333333333333" />
         <entry key="..\:/Workspace/Android Workspace/Hello-Git/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Workspace/Android Workspace/Hello-Git/app/src/main/res/layout/fragment_home_landing.xml" value="0.3333333333333333" />
+        <entry key="..\:/Workspace/Android Workspace/Hello-Git/app/src/main/res/layout/fragment_item.xml" value="0.1796875" />
+        <entry key="..\:/Workspace/Android Workspace/Hello-Git/app/src/main/res/layout/fragment_item_list.xml" value="0.1796875" />
         <entry key="..\:/Workspace/Android Workspace/Hello-Git/app/src/main/res/menu/item_menu.xml" value="0.3333333333333333" />
       </map>
     </option>

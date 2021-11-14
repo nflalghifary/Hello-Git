@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Other style attributes -->
+        <item name="colorControlNormal">@color/Biru</item>
+        <item name="android:statusBarColor">@color/Biru</item>
+    </style>
+</resources>

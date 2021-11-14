@@ -6,42 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <TextView
-        android:layout_marginTop="30dp"
-        android:id="@+id/Text_DataIndonesia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:text="Data Indonesia"
-        android:textColor="@color/Biru"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:id="@+id/Text_DataIndonesia"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="64dp"-->
+<!--        android:text=""-->
+<!--        android:textColor="@color/Biru"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <!--        app:layout_constraintTop_toBottomOf="@id/homepage_logo" -->
+<!--    &lt;!&ndash;        app:layout_constraintTop_toBottomOf="@id/homepage_logo" &ndash;&gt;-->
 
-    <TextView
-        android:id="@+id/Text_DataProvinsi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="64dp"
-        android:text="Data Provinsi"
-        android:textColor="@color/Abu"
-        app:layout_constraintBaseline_toBaselineOf="@id/Text_DataIndonesia"
-        app:layout_constraintEnd_toEndOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/Text_DataProvinsi"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="64dp"-->
+<!--        android:text=""-->
+<!--        android:textColor="@color/Abu"-->
+<!--        app:layout_constraintBaseline_toBaselineOf="@id/Text_DataIndonesia"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
 
 
     <ScrollView
         android:id="@+id/total_kasus_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="32dp"
         android:fadingEdgeLength="2dp"
         android:fillViewport="true"
         android:requiresFadingEdge="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Text_DataIndonesia">
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"

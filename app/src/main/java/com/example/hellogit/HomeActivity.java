@@ -1,7 +1,11 @@
 package com.example.hellogit;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,6 +21,11 @@ public class HomeActivity extends AppCompatActivity {
     private Calendar calendar;
     BottomNavigationView navigationView;
 
+    public void goToAnActivity(View view) {
+        Intent intent = new Intent(this, Info.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         TextView tanggalHariIni = (TextView)findViewById(R.id.homepage_date);
         tanggalHariIni.setText(formattedDate);
 
+
         navigationView = findViewById(R.id.bottom_navbar);
         getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new HomeFragment()).commit();
         navigationView.setSelectedItemId(R.id.nav_home);
@@ -35,21 +45,31 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment fragment = null;
+                int id = item.getItemId();
                 switch (item.getItemId()){
                     case R.id.nav_home:
                         fragment = new HomeFragment();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.body_container, fragment).commit();
                         break;
                     case R.id.nav_covid:
                         fragment = new COVIDFragment();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.body_container, fragment).commit();
+
                         break;
                     case R.id.nav_faq:
-                        fragment = new FAQFragment();
+                        Intent i = new Intent(HomeActivity.this, Info.class);
+                        startActivity(i);
+                        break;
+                    case R.id.nav_provinsi:
+                        Intent s = new Intent(HomeActivity.this, ProvinsiActivity.class);
+                        startActivity(s);
                         break;
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.body_container, fragment).commit();
                 return true;
             }
         });
 
     }
+
+
 }
