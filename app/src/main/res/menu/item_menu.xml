@@ -11,7 +11,7 @@
         android:title="Home" />
     <item
         android:id="@+id/nav_provinsi"
-        android:icon="@drawable/ic_navbar_home"
+        android:icon="@drawable/ic_provinsi"
         android:title="Provinsi" />
     <item
         android:id="@+id/nav_faq"
