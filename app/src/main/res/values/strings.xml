@@ -23,4 +23,7 @@
                     \n\n<font size="20"><b>Peran Masyarakat Dalam Mencegah COVID-19 </b></font>\nDalam pandemi COVID-19 diharapkan masyarakat agar tetap menjaga kesehatan terlebih imunitas tubuh yang cukup dengan berolahraga dan mematuhi protokol kesehatan. Mengelola stres juga penting dilakukan. Pasalnya, stres berpengaruh terhadap imunitas tubuh. Apabila seseorang stres maka tubuh akan mengeluarkan hormon untuk meredakan stres. Namun, kondisi tersebut berefek menurunkan kekebalan tubuh. Oleh sebab itu, kami menghimbau masyarakat untuk tidak mudah stres menghadapai situasi yang tidak menentu ini ditengah pandemi COVID-19.
                     \n\n<font size="20"><b>Pentingnya Vaksin Dalam Mencegah COVID-19 </b></font>\nVaksinasi adalah pemberian vaksin (antigen) yang dapat merangsang pembentukan imunitas (antibodi) sistem imun di dalam tubuh. Vaksinasi sebagai upaya pencegahan primer yang sangat handal mencegah penyakit yang dapat dicegah dengan vaksinasi. Dengan prosedur vaksinasi yang benar diharapkan akan di peroleh kekebalan yang optimal, penyuntikan yang aman dan Kejadian Ikutan Pasca Imunisasi(KIPI) yang minimal.
 </string>
+    <string name="CTC_Header"><b>CTC</b>: <i>Corona Tracking Case</i></string>
+    <string name="CTC_Description">CTC (Corona Tracking Case) merupakan aplikasi informasi perkembangan kasus dan pencegahan COVID-19 di Indonesia terutama daerah Provinsi.</string>
+    <string name="CTC_Developed">App Developed by: <b>Banteng Merah</b></string>
 </resources>
